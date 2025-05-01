@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Micah Merkel | Portfolio</title>
+  <title>Your Name | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       padding-top: 60px;
+      font-family: 'Inter', sans-serif;
     }
+
     section {
       padding: 60px 0;
     }
+
+    .card {
+      border: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
   </style>
 </head>
+
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Micah Merkel</a>
+      <a class="navbar-brand fw-bold" href="#">Micah Merkel</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -33,48 +44,64 @@
     </div>
   </nav>
 
-  <!-- About Section -->
-  <section id="about" class="bg-light text-center">
+  <!-- Hero Section -->
+  <section class="text-center bg-light py-5">
     <div class="container">
-      <h2>About Me</h2>
-      <p class="lead">Hi! I'm Micah Merkel, a computer science student with an interest in web development, 
-        security, and systems design. I'm currently working on a few cool projects and always looking to 
-        learn more.</p>
+      <h1 class="display-4 fw-bold">Hi, I'm Micah Merkel</h1>
+      <p class="lead text-muted">Aspiring software developer focused on building modern web apps and systems.</p>
+      <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="text-center">
+    <div class="container">
+      <h2 class="display-5 fw-bold">About Me</h2>
+      <p class="lead text-muted">Hi! I'm Micah, a computer science student with an interest in web development,
+        security, and systems design. I'm currently working on a few cool projects and always looking to learn more.</p>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="text-center">
+  <section id="projects" class="bg-light text-center">
     <div class="container">
-      <h2>Projects</h2>
-      <br>
-      <div class="row">
-        <div class="col-md-4">
-          <h4>College Football Quad Rankings Website</h4>
-          <p>Once finished, the description of this project will go here</p>
-        </div>
-        <div class="col-md-4">
-          <h4>Placeholder 2</h4>
-          <p>A second project would go here</p>
-        </div>
-        <div class="col-md-4">
-            <h4>Placeholder 3</h4>
-            <p>Another project would go here.</p>
+      <h2 class="display-5 fw-bold">Projects</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Info about a project would go here</p>
+              <a href="#" class="btn btn-outline-primary">View on GitHub</a>
+            </div>
           </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">Info about another project would go here</p>
+              <a href="#" class="btn btn-outline-primary">View on GitHub</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="bg-light text-center">
+  <section id="contact" class="text-center">
     <div class="container">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:micahdavismerkel@gmail.com">micahdavismerkel@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/Micah-Merkel" target="_blank">LinkedIn</a></p>
-      <p>GitHub: <a href="https://github.com/mdmerk01" target="_blank">GitHub</a></p>
+      <h2 class="display-5 fw-bold">Contact</h2>
+      <p><i class="fas fa-envelope me-2"></i>Email: <a
+          href="mailto:micahdavismerkel@gmail.com">micahdavismerkel@gmail.com</a></p>
+      <p><i class="fab fa-linkedin me-2"></i>LinkedIn: <a href="https://linkedin.com/in/Micah-Merkel"
+          target="_blank">LinkedIn</a></p>
+      <p><i class="fab fa-github me-2"></i>GitHub: <a href="https://github.com/mdmerk01" target="_blank">GitHub</a></p>
     </div>
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
